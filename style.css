@@ -52,6 +52,27 @@
   background-color: rgb(3, 4, 94);
 }
 
+.cuadro_intro {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.intro_texto {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  font-size: 300%;
+  color: white;
+  background-color: transparent;
+  transition: transform 1s;
+}
+
+.intro_texto:hover {
+  -webkit-transform: translateY(8%);
+  transform: translateY(8%);
+}
+
 .titulos_grandes {
   color: rgb(29, 45, 68);
   position: sticky;
