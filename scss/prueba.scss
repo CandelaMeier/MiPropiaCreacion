@@ -1,7 +1,16 @@
+$color-aga: rgb(3,4,94
+);
+$color-caravana: rgb(0, 119, 182);
+$color-base: rgb(173,	216,	230);
+$color-aspirante: rgb(116, 140, 171);
+$color-luz: rgb(255,255, 255);
+$color-oceano: rgb(29, 45, 68);
+
+
 * {
   margin: 0%;
   padding: 0%;
-  background-color: lightblue;
+  background-color: $color-base;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
@@ -12,7 +21,7 @@
   padding: 0;
   top: 0;
   overflow: hidden;
-  background-color: rgb(3, 4, 94);
+  background-color: $color-aga;
 }
 
 .navegador a {
@@ -29,7 +38,7 @@
 }
 
 .navegador a.active {
-  background-color: rgb(0, 119, 182);
+  background-color: $color-caravana;
 }
 
 .logo {
@@ -47,21 +56,21 @@
 }
 
 .botones_nav a:hover {
-  background-color: rgb(0, 119, 182);
-  color: white;
+  background-color: $color-caravana;
+  color: $color-luz;
 }
 
 .botones_nav a {
   display: grid;
   justify-items: center;
   align-items: center;
-  color: rgb(0, 119, 182);
+  color: $color-caravana;
   text-align: center;
   padding: 10px 15px;
   text-decoration: none;
   border-radius: 5px;
-  border: 1px solid rgb(116, 140, 171);
-  background-color: rgb(3, 4, 94);
+  border: 1px solid $color-aspirante;
+  background-color: $color-aga;
 }
 
 .navegador .icon {
@@ -79,7 +88,7 @@
   top: 25%;
   left: 40%;
   font-size: 300%;
-  color: white;
+  color: $color-luz;
   background-color: transparent;
   transition: transform 1s;
 }
@@ -90,12 +99,12 @@
 }
 
 .titulos_grandes {
-  color: rgb(29, 45, 68);
+  color: $color-oceano;
   position: sticky;
   margin-top: 5%;
   margin-bottom: 2%;
   text-align: center;
-  background-color: solid rgb(116, 140, 171);
+  background-color: solid $color-aspirante;
   transition: transform 1s;
 }
 
@@ -106,10 +115,10 @@
 }
 
 .titulos_chicos {
-  color: rgb(0, 119, 182);
+  color: $color-caravana;
   position: sticky;
   text-align: center;
-  background-color: lightblue;
+  background-color: $color-base;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -118,7 +127,7 @@
   margin-left: 70px;
   text-align: center;
   list-style-type: none;
-  background-color: lightblue;
+  background-color: $color-base;
 }
 
 .cuadros-texto {
@@ -126,21 +135,30 @@
   margin: 3%;
   margin-left: 25%;
   text-align: center;
-  background-color: lightblue;
+  background-color: $color-base;
 }
 
 .lemas {
-  color: rgb(0, 119, 182);
+  color: $color-caravana;
   text-align: center;
-  background-color: lightblue;
+  background-color:$color-base;
   margin-top: 1%;
   margin-bottom: 1%;
 }
 
 .botones_link {
-  border: solid rgb(116, 140, 171);
+  border: solid $color-aspirante;
   border-radius: 10%;
   padding: 1%;
+}
+
+.mapa {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 50%;
+  padding: 5%;
+  margin-left: 25%;
 }
 
 .contacto_formulario {
@@ -155,9 +173,14 @@
   align-items: center;
 }
 
-.social {
-  display: inline-block;
-  margin-bottom: 5%;
+.redes {
+  display: flex;
+  flex-direction: row;
+}
+
+.fotos-redes {
+  height: 5%;
+  margin: 1%;
 }
 
 .imagenes {
@@ -169,12 +192,7 @@
   flex-direction: column;
 }
 
-.mapa {
-  justify-content: center;
-  width: 50%;
-  padding: 2%;
-}
-
 .galeria {
   display: grid;
 }
+

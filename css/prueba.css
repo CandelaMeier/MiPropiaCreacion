@@ -1,7 +1,7 @@
 * {
   margin: 0%;
   padding: 0%;
-  background-color: lightblue;
+  background-color: rgb(173, 216, 230);
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
@@ -48,7 +48,7 @@
 
 .botones_nav a:hover {
   background-color: rgb(0, 119, 182);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .botones_nav a {
@@ -79,7 +79,7 @@
   top: 25%;
   left: 40%;
   font-size: 300%;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: transparent;
   transition: transform 1s;
 }
@@ -109,7 +109,7 @@
   color: rgb(0, 119, 182);
   position: sticky;
   text-align: center;
-  background-color: lightblue;
+  background-color: rgb(173, 216, 230);
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -118,7 +118,7 @@
   margin-left: 70px;
   text-align: center;
   list-style-type: none;
-  background-color: lightblue;
+  background-color: rgb(173, 216, 230);
 }
 
 .cuadros-texto {
@@ -126,13 +126,13 @@
   margin: 3%;
   margin-left: 25%;
   text-align: center;
-  background-color: lightblue;
+  background-color: rgb(173, 216, 230);
 }
 
 .lemas {
   color: rgb(0, 119, 182);
   text-align: center;
-  background-color: lightblue;
+  background-color: rgb(173, 216, 230);
   margin-top: 1%;
   margin-bottom: 1%;
 }
@@ -141,6 +141,15 @@
   border: solid rgb(116, 140, 171);
   border-radius: 10%;
   padding: 1%;
+}
+
+.mapa {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 50%;
+  padding: 5%;
+  margin-left: 25%;
 }
 
 .contacto_formulario {
@@ -155,9 +164,14 @@
   align-items: center;
 }
 
-.social {
-  display: inline-block;
-  margin-bottom: 5%;
+.redes {
+  display: flex;
+  flex-direction: row;
+}
+
+.fotos-redes {
+  height: 5%;
+  margin: 1%;
 }
 
 .imagenes {
@@ -167,12 +181,6 @@
 .formulario {
   display: flex;
   flex-direction: column;
-}
-
-.mapa {
-  justify-content: center;
-  width: 50%;
-  padding: 2%;
 }
 
 .galeria {
