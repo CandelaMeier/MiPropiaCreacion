@@ -1,0 +1,182 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  background-color: lightblue;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.navegador {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: rgb(3, 4, 94);
+}
+
+.navegador a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navegador a:hover {
+  color: black;
+}
+
+.navegador a.active {
+  background-color: rgb(0, 119, 182);
+}
+
+.logo {
+  height: 7%;
+  width: 7%;
+  float: left;
+}
+
+.botones_nav {
+  align-items: center;
+  float: right;
+  border-radius: 5px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.botones_nav a:hover {
+  background-color: rgb(0, 119, 182);
+  color: white;
+}
+
+.botones_nav a {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: rgb(0, 119, 182);
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid rgb(116, 140, 171);
+  background-color: rgb(3, 4, 94);
+}
+
+.navegador .icon {
+  display: none;
+}
+
+.cuadro_intro {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.intro_texto {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  font-size: 300%;
+  color: white;
+  background-color: transparent;
+  transition: transform 1s;
+}
+
+.intro_texto:hover {
+  -webkit-transform: translateY(8%);
+  transform: translateY(8%);
+}
+
+.titulos_grandes {
+  color: rgb(29, 45, 68);
+  position: sticky;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  text-align: center;
+  background-color: solid rgb(116, 140, 171);
+  transition: transform 1s;
+}
+
+.titulos_grandes:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.titulos_chicos {
+  color: rgb(0, 119, 182);
+  position: sticky;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.ramas {
+  margin-left: 70px;
+  text-align: center;
+  list-style-type: none;
+  background-color: lightblue;
+}
+
+.cuadros-texto {
+  width: 50%;
+  margin: 3%;
+  margin-left: 25%;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.lemas {
+  color: rgb(0, 119, 182);
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.botones_link {
+  border: solid rgb(116, 140, 171);
+  border-radius: 10%;
+  padding: 1%;
+}
+
+.contacto_formulario {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto {
+  text-align: center;
+  align-items: center;
+}
+
+.social {
+  display: inline-block;
+  margin-bottom: 5%;
+}
+
+.imagenes {
+  width: 100%;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.mapa {
+  justify-content: center;
+  width: 50%;
+  padding: 2%;
+}
+
+.galeria {
+  display: grid;
+}
+
+/*# sourceMappingURL=prueba.css.map */

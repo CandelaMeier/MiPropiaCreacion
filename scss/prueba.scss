@@ -15,9 +15,21 @@
   background-color: rgb(3, 4, 94);
 }
 
+.navegador a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navegador a:hover {
+  color: black;
+}
+
 .navegador a.active {
   background-color: rgb(0, 119, 182);
-  color: white;
 }
 
 .logo {
@@ -50,6 +62,10 @@
   border-radius: 5px;
   border: 1px solid rgb(116, 140, 171);
   background-color: rgb(3, 4, 94);
+}
+
+.navegador .icon {
+  display: none;
 }
 
 .cuadro_intro {
@@ -135,32 +151,28 @@
 }
 
 .contacto {
-  display: flex;
   text-align: center;
   align-items: center;
+}
+
+.social {
+  display: inline-block;
+  margin-bottom: 5%;
 }
 
 .imagenes {
   width: 100%;
 }
 
-.img-social {
-  height: 15%;
-  width: 15%;
-}
-
 .formulario {
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .mapa {
   justify-content: center;
   width: 50%;
   padding: 2%;
-  margin-left: 25%;
 }
 
 .galeria {

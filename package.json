@@ -1,0 +1,25 @@
+{
+  "name": "mipropiacreacion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass scss:css",
+    "watch": "sass scss:css --watch scss/styles.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CandelaMeier/GuiasDelValle.git"
+  },
+  "author": "Candela Ayelen Meier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CandelaMeier/GuiasDelValle/issues"
+  },
+  "homepage": "https://github.com/CandelaMeier/GuiasDelValle#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sass": "^1.56.0"
+  }
+}
