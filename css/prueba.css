@@ -1,15 +1,26 @@
 * {
-  margin: 0%;
-  padding: 0%;
   background-color: rgb(173, 216, 230);
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
-.navegador {
-  list-style-type: none;
+.body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: rgb(173, 216, 230);
+}
+
+.alargado, .navegador, * {
+  margin: 0%;
+  padding: 0%;
+}
+
+.navegador {
+  list-style-type: none;
   top: 0;
   overflow: hidden;
   background-color: rgb(3, 4, 94);
@@ -54,9 +65,9 @@
 .botones_nav a {
   display: grid;
   justify-items: center;
-  align-items: center;
+  text-align: 0%;
+  align-items: 0%;
   color: rgb(0, 119, 182);
-  text-align: center;
   padding: 10px 15px;
   text-decoration: none;
   border-radius: 5px;
@@ -108,17 +119,17 @@
 .titulos_chicos {
   color: rgb(0, 119, 182);
   position: sticky;
-  text-align: center;
-  background-color: rgb(173, 216, 230);
   margin-top: 2%;
   margin-bottom: 2%;
+  text-align: center;
+  background-color: rgb(173, 216, 230);
 }
 
 .ramas {
   margin-left: 70px;
   text-align: center;
-  list-style-type: none;
   background-color: rgb(173, 216, 230);
+  list-style-type: none;
 }
 
 .cuadros-texto {
@@ -160,8 +171,8 @@
 }
 
 .contacto {
-  text-align: center;
-  align-items: center;
+  text-align: 0%;
+  align-items: 0%;
 }
 
 .redes {
@@ -172,6 +183,7 @@
 .fotos-redes {
   height: 5%;
   margin: 1%;
+  align-items: center;
 }
 
 .imagenes {
@@ -185,6 +197,14 @@
 
 .galeria {
   display: grid;
+}
+
+.abajo {
+  background: rgb(173, 216, 230);
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=prueba.css.map */

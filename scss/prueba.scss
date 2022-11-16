@@ -5,25 +5,46 @@ $color-base: rgb(173,	216,	230);
 $color-aspirante: rgb(116, 140, 171);
 $color-luz: rgb(255,255, 255);
 $color-oceano: rgb(29, 45, 68);
-
-
 * {
-  margin: 0%;
-  padding: 0%;
+  @extend .alargado;
   background-color: $color-base;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
-
-.navegador {
-  list-style-type: none;
+@mixin center {
+  text-align: 0%;
+  align-items: 0%;
+}
+@mixin base {
+  text-align: center;
+  background-color: $color-base;
+}
+@mixin titulos-chicos {
+  color: $color-caravana;
+  position: sticky;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.body{
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: $color-base;
+}
+.alargado {
+  margin: 0%;
+  padding: 0%;
+}
+.navegador {
+  list-style-type: none;
+  @extend .alargado;
   top: 0;
   overflow: hidden;
   background-color: $color-aga;
 }
-
 .navegador a {
   float: left;
   display: block;
@@ -32,21 +53,17 @@ $color-oceano: rgb(29, 45, 68);
   text-decoration: none;
   font-size: 17px;
 }
-
 .navegador a:hover {
   color: black;
 }
-
 .navegador a.active {
   background-color: $color-caravana;
 }
-
 .logo {
   height: 7%;
   width: 7%;
   float: left;
 }
-
 .botones_nav {
   align-items: center;
   float: right;
@@ -54,35 +71,29 @@ $color-oceano: rgb(29, 45, 68);
   margin: 10px;
   transition: 0.3s;
 }
-
 .botones_nav a:hover {
   background-color: $color-caravana;
   color: $color-luz;
 }
-
 .botones_nav a {
   display: grid;
   justify-items: center;
-  align-items: center;
+  @include center();
   color: $color-caravana;
-  text-align: center;
   padding: 10px 15px;
   text-decoration: none;
   border-radius: 5px;
   border: 1px solid $color-aspirante;
   background-color: $color-aga;
 }
-
 .navegador .icon {
   display: none;
 }
-
 .cuadro_intro {
   position: relative;
   display: inline-block;
   text-align: center;
 }
-
 .intro_texto {
   position: absolute;
   top: 25%;
@@ -92,12 +103,10 @@ $color-oceano: rgb(29, 45, 68);
   background-color: transparent;
   transition: transform 1s;
 }
-
 .intro_texto:hover {
   -webkit-transform: translateY(8%);
   transform: translateY(8%);
 }
-
 .titulos_grandes {
   color: $color-oceano;
   position: sticky;
@@ -107,51 +116,37 @@ $color-oceano: rgb(29, 45, 68);
   background-color: solid $color-aspirante;
   transition: transform 1s;
 }
-
 .titulos_grandes:hover {
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
-
 .titulos_chicos {
-  color: $color-caravana;
-  position: sticky;
-  text-align: center;
-  background-color: $color-base;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  @include titulos-chicos();
+  @include base();
 }
-
 .ramas {
   margin-left: 70px;
-  text-align: center;
+  @include base();
   list-style-type: none;
-  background-color: $color-base;
 }
-
 .cuadros-texto {
   width: 50%;
   margin: 3%;
   margin-left: 25%;
-  text-align: center;
-  background-color: $color-base;
+  @include base();
 }
-
 .lemas {
   color: $color-caravana;
-  text-align: center;
-  background-color:$color-base;
+  @include base();
   margin-top: 1%;
   margin-bottom: 1%;
 }
-
 .botones_link {
   border: solid $color-aspirante;
   border-radius: 10%;
   padding: 1%;
 }
-
 .mapa {
   display: flex;
   justify-items: center;
@@ -160,39 +155,38 @@ $color-oceano: rgb(29, 45, 68);
   padding: 5%;
   margin-left: 25%;
 }
-
 .contacto_formulario {
   display: grid;
   grid-template-rows: 1fr 2fr;
   align-items: center;
   justify-content: center;
 }
-
 .contacto {
-  text-align: center;
-  align-items: center;
+  @include center();
 }
-
 .redes {
   display: flex;
   flex-direction: row;
 }
-
 .fotos-redes {
   height: 5%;
   margin: 1%;
+  align-items: center;
 }
-
 .imagenes {
   width: 100%;
 }
-
 .formulario {
   display: flex;
   flex-direction: column;
 }
-
 .galeria {
   display: grid;
 }
-
+.abajo {
+  background: $color-base;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  align-self: flex-end;
+}
