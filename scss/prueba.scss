@@ -183,6 +183,10 @@ $color-oceano: rgb(29, 45, 68);
 .galeria {
   display: grid;
 }
+.lema-abajo {
+  @extend .titulos_chicos;
+  font-size: large;
+}
 .abajo {
   background: $color-base;
   width: 100%;

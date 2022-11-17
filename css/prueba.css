@@ -116,7 +116,7 @@
   transform: scale(1.5);
 }
 
-.titulos_chicos {
+.titulos_chicos, .lema-abajo {
   color: rgb(0, 119, 182);
   position: sticky;
   margin-top: 2%;
@@ -197,6 +197,10 @@
 
 .galeria {
   display: grid;
+}
+
+.lema-abajo {
+  font-size: large;
 }
 
 .abajo {
