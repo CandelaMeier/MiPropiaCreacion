@@ -1,3 +1,7 @@
+.body {
+  background-color: rgb(173, 216, 230);
+}
+
 * {
   background-color: rgb(173, 216, 230);
   font-family: "Roboto", sans-serif;
@@ -14,69 +18,28 @@
   background: rgb(173, 216, 230);
 }
 
-.alargado, .navegador, * {
+.alargado, * {
   margin: 0%;
   padding: 0%;
 }
 
-.navegador {
-  list-style-type: none;
-  top: 0;
-  overflow: hidden;
-  background-color: rgb(3, 4, 94);
+.navbar, .nav-link, .nav-item, .collapse, .navbar-brand {
+  background-color: rgb(29, 45, 68);
 }
 
-.navegador a {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.navbar-toggler-icon, .navbar-toggler {
+  background-color: rgb(116, 140, 171);
 }
 
-.navegador a:hover {
-  color: black;
-}
-
-.navegador a.active {
-  background-color: rgb(0, 119, 182);
+.nav-link {
+  color: rgb(116, 140, 171);
+  margin-right: 5%;
 }
 
 .logo {
   height: 7%;
   width: 7%;
   float: left;
-}
-
-.botones_nav {
-  align-items: center;
-  float: right;
-  border-radius: 5px;
-  margin: 10px;
-  transition: 0.3s;
-}
-
-.botones_nav a:hover {
-  background-color: rgb(0, 119, 182);
-  color: rgb(255, 255, 255);
-}
-
-.botones_nav a {
-  display: grid;
-  justify-items: center;
-  text-align: 0%;
-  align-items: 0%;
-  color: rgb(0, 119, 182);
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 5px;
-  border: 1px solid rgb(116, 140, 171);
-  background-color: rgb(3, 4, 94);
-}
-
-.navegador .icon {
-  display: none;
 }
 
 .cuadro_intro {
@@ -178,6 +141,7 @@
 .redes {
   display: flex;
   flex-direction: row;
+  margin-left: 10%;
 }
 
 .fotos-redes {
@@ -201,6 +165,7 @@
 
 .lema-abajo {
   font-size: large;
+  margin-left: 10%;
 }
 
 .abajo {

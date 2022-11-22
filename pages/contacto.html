@@ -33,6 +33,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -42,22 +57,46 @@
   </head>
   <body>
     <section>
-      <nav>
-        <ul class="navegador">
-          <il class="botones_nav"><a href="./contacto.html">Contacto</a></il>
-          <il class="botones_nav"><a href="./galeria.html">Galería</a></il>
-          <il class="botones_nav"><a href="./ramas.html">Ramas</a></il>
-          <il class="botones_nav"><a href="./nosotras.html">Nosotras</a></il>
-          <il class="botones_nav"><a href="../index.html">Inicio</a></il>
-          <div class="animate__animated animate__fadeIn">
-            <img
-              src="../Fotos/logo-guías-mundial.png"
-              class="logo"
-              alt="Logo de la
-            Asociación Mundial Guía"
-            />
-          </div>
-        </ul>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="../index.html"
+          ><img
+            src="../Fotos/logo-guías-mundial.png"
+            class="logo"
+            alt="Logo de la
+        Asociación Mundial Guía"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html"
+                >Inicio <span class="sr-only"></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotras.html">Nosotras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ramas.html">Ramas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </section>
     <div class="contacto_formulario">

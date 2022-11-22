@@ -5,6 +5,9 @@ $color-base: rgb(173,	216,	230);
 $color-aspirante: rgb(116, 140, 171);
 $color-luz: rgb(255,255, 255);
 $color-oceano: rgb(29, 45, 68);
+.body {
+  background-color: $color-base;
+}
 * {
   @extend .alargado;
   background-color: $color-base;
@@ -38,57 +41,35 @@ $color-oceano: rgb(29, 45, 68);
   margin: 0%;
   padding: 0%;
 }
-.navegador {
-  list-style-type: none;
-  @extend .alargado;
-  top: 0;
-  overflow: hidden;
-  background-color: $color-aga;
+.navbar {
+  background-color: $color-oceano;
 }
-.navegador a {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.navbar-brand {
+  @extend .navbar;
 }
-.navegador a:hover {
-  color: black;
+.collapse {
+  @extend .navbar;
 }
-.navegador a.active {
-  background-color: $color-caravana;
+.nav-item {
+  @extend .navbar;
+}
+.navbar-toggler {
+  @extend .navbar-toggler-icon;
+}
+.navbar-toggler-icon {
+  background-color: $color-aspirante;
+}
+.nav-link {
+  color: $color-aspirante;
+  margin-right: 5%;
+  @extend .navbar;
 }
 .logo {
   height: 7%;
   width: 7%;
   float: left;
 }
-.botones_nav {
-  align-items: center;
-  float: right;
-  border-radius: 5px;
-  margin: 10px;
-  transition: 0.3s;
-}
-.botones_nav a:hover {
-  background-color: $color-caravana;
-  color: $color-luz;
-}
-.botones_nav a {
-  display: grid;
-  justify-items: center;
-  @include center();
-  color: $color-caravana;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 5px;
-  border: 1px solid $color-aspirante;
-  background-color: $color-aga;
-}
-.navegador .icon {
-  display: none;
-}
+
 .cuadro_intro {
   position: relative;
   display: inline-block;
@@ -167,6 +148,7 @@ $color-oceano: rgb(29, 45, 68);
 .redes {
   display: flex;
   flex-direction: row;
+  margin-left: 10%;
 }
 .fotos-redes {
   width: 9%;
@@ -186,6 +168,7 @@ $color-oceano: rgb(29, 45, 68);
 .lema-abajo {
   @extend .titulos_chicos;
   font-size: large;
+  margin-left: 10%;
 }
 .abajo {
   background: $color-base;
