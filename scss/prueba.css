@@ -55,12 +55,12 @@
 }
 
 .intro_texto:hover {
-  -webkit-transform: translateY(8%);
   transform: translateY(8%);
 }
 
 .titulos_grandes {
   color: rgb(29, 45, 68);
+  position: -webkit-sticky;
   position: sticky;
   margin-bottom: 2%;
   text-align: center;
@@ -69,13 +69,12 @@
 }
 
 .titulos_grandes:hover {
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
 
 .titulos_chicos, .lema-abajo {
   color: rgb(0, 119, 182);
+  position: -webkit-sticky;
   position: sticky;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -169,6 +168,4 @@
   text-align: center;
   padding: 1em;
   align-self: flex-end;
-}
-
-/*# sourceMappingURL=prueba.css.map */
+}/*# sourceMappingURL=prueba.css.map */
